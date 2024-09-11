@@ -27,6 +27,7 @@ HeatScale <- rbind(HeatScale, cr)
 # (g)Determine the variable type of each variable in HeatScale and describe any issues,
 # if any, you observe. Include any code used and include your values as a comment
 str(HeatScale) 
+
 #Pepper are a characters which is fine given the data type held in this 
 #Scoville_Units are characters, but should be numeric 
 #Growing_Time_Days are characters, but should be numeric
