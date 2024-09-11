@@ -1,4 +1,4 @@
-# Hw 1 - Intro to R 
+# Homework 1 - Intro to R 
 # Fatima Mora Garcia
 # STAT 382 Fall 2024 
 # Professor: Dr. Jennifer Pajda-De La O
