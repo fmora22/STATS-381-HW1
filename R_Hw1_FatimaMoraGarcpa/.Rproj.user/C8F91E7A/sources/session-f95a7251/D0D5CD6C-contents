@@ -1,7 +1,13 @@
 # Hw 1 - Intro to R 
 # Fatima Mora Garcia
 # STAT 382 Fall 2024 
-# Dr. Jennifer Pajda-De La O
+# Professor: Dr. Jennifer Pajda-De La O
+# Description: Data Frame Creation. Task: Data Frame Creation
+1. A pepper enthusiast puts together the following data set about different peppers (least
+spicy to most spicy), how hot they are, and how many days it takes to grow the pepper
+plants from seed. Pepper is the name of the pepper, Scoville Units is how hot the pepper is
+in thousands (the larger the number, the hotter the pepper), and Growing Time represents
+how many days on average it takes to grow the pepper from seed.
 
 # (a) Create a vector called pepper consisting of the words Bell, Tabasco, Ghost
 pepper <- c("Bell", "Tabasco", "Ghost")
