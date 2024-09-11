@@ -1,0 +1,46 @@
+# Hw 1 - Intro to R 
+# Fatima Mora Garcia
+# STAT 382 Fall 2024 
+# Professor: Dr. Jennifer Pajda-De La O
+# Description: Data Frame Creation. Task: Data Frame Creation
+1. A pepper enthusiast puts together the following data set about different peppers (least
+spicy to most spicy), how hot they are, and how many days it takes to grow the pepper
+plants from seed. Pepper is the name of the pepper, Scoville Units is how hot the pepper is
+in thousands (the larger the number, the hotter the pepper), and Growing Time represents
+how many days on average it takes to grow the pepper from seed.
+
+# (a) Create a vector called pepper consisting of the words Bell, Tabasco, Ghost
+pepper <- c("Bell", "Tabasco", "Ghost")
+
+# (b) Create a vector called scoville consisting of the Scoville Units as numbers
+scoville <- c(0, 50, 855)
+
+# (c) Create a vector called days consisting of the Growing Times as numbers.
+days <- c(75, 80, 120)
+
+# (d) Combine these three vectors to create a data frame called HeatScale.
+HeatScale <- data.frame(Pepper = pepper, 
+                        Scoville_Units = scoville, 
+                        Growing_Time_Days = days)
+
+# (e) Create a vector called cr consisting of these values (pepper, scoville, days).
+cr <- data.frame(Pepper = "Carolina Reaper", 
+                 Scoville_Units = 2000, 
+                 Growing_Time_Days = 95)
+
+# (f) Add cr as a row to HeatScale. (Make sure you work with the data frame you
+# previously created, and not the original vectors.)
+HeatScale <- rbind(HeatScale, cr)
+
+# (g)Determine the variable type of each variable in HeatScale and describe any issues,
+# if any, you observe. Include any code used and include your values as a comment
+str(HeatScale) 
+#Pepper are a characters which is p
+
+# (h) Convert variables 
+HeatScale$Pepper <- as.factor(HeatScale$Pepper)
+HeatScale$Scoville_Units <- as.numeric(HeatScale$Scoville_Units)
+HeatScale$Growing_Time_Days <- as.numeric(HeatScale$Growing_Time_Days)
+
+# check updated data frame for the correct conversion
+str(HeatScale)
