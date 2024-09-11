@@ -15,6 +15,7 @@ days <- c(75, 80, 120)
 
 # (d) Combine these three vectors to create a data frame called HeatScale
 HeatScale <- data.frame(Pepper = pepper, Scoville_Units = scoville, Growing_Time_Days = days)
+
 # (e) One of the hottest peppers in the world is the Carolina Reaper. The Reaper has a
 # Scoville Unit (in thousands) of 2000, and a growing time in days of about 95 days.
 cr <- data.frame(Pepper = "Carolina Reaper", Scoville_Units = "2000", Growing_Time_Days = "95")
@@ -31,8 +32,7 @@ str(HeatScale)
 #Growing_Time_Days are characters, but should be numeric
 #This could be an issue when trying to perform calculations on these variables
 
-# Convert each variable to an appropriate type (numeric, character, factor, or ordered
-# Convert each variable to an appropriate type (numeric, character, factor, or ordered
+# (h)Convert each variable to an appropriate type (numeric, character, factor, or ordered
 # factor) within the data frame. For each type you choose, explain why you picked that
 # type. Include your values as a comment in your code. 
 HeatScale$Pepper <- ordered(HeatScale$Pepper, levels = c("Bell", "Tabasco", "Ghost", "Carolina Reaper")) # Ordered because there is a increasing scale of spiciness (Scoville Units) and each pepper has a different level of spiciness
